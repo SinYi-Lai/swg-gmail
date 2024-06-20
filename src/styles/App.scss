@@ -1,0 +1,347 @@
+@import './_variables';
+
+html,
+body {
+    min-height: 100%;
+}
+
+* {
+    font-family: Google Sans, Noto Sans TC, Noto Sans CJK TC, Arial, Helvetica, sans-serif !important;
+    box-sizing: border-box;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: color(grey800);
+    margin: 0;
+    padding: 0;
+    // 禁止選取
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.btn {
+    cursor: pointer;
+    background-color: color(blue800);
+    display: inline-block;
+    padding: 0.8vw 2.5vw 0.8vw;
+    border-radius: 8vw;
+
+    .btn_box {
+        @include flexBox(row, center, center);
+
+        .btn_text {
+            font-size: 3vw;
+            color: color(white);
+        }
+
+        .icon_hand {
+            width: 5vw;
+            margin-top: 0.4vw;
+        }
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.title_1 {
+    font-size: 2.6vw;
+    font-weight: 500;
+}
+
+.content_1 {
+    font-size: 1.8vw;
+}
+
+.title_2 {
+    font-size: 2vw;
+    font-weight: 500;
+    margin-bottom: 1.7vw;
+}
+
+.content_2 {
+    font-size: 1.5vw;
+    margin-bottom: 1.7vw;
+}
+
+.a_img {
+    margin-bottom: 1.7vw;
+    height: 8.5vw;
+    width: auto;
+}
+
+.opacity5 {
+    opacity: 0.05;
+    transition: all 1s;
+}
+
+.result_answer {
+    @include flexBox(row, center, flex-start);
+    margin-bottom: 0.5vw;
+
+    .svg_box {
+        width: 3.6vw;
+        height: 3.6vw;
+        margin-right: 0.3vw;
+        margin-bottom: 0.05vw;
+    }
+
+    .text {
+        font-size: 3.1vw;
+        font-weight: 500;
+        line-height: 3.6vw;
+    }
+}
+
+.right {
+    color: color(green500);
+}
+
+.wrong {
+    color: color(red500);
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-color: color(white);
+    position: relative;
+
+    .bg {
+        width: 100%;
+        height: 100%;
+
+        .img_preloading {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .bg_kv {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+
+            .lottie_kv {
+                width: 100%;
+                height: 100%;
+                @include flexBox(row, center, center);
+
+                svg {
+                    width: 100%;
+                    height: auto !important;
+                }
+            }
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 0;
+
+            .swg_logo {
+                width: 16.05vw;
+                position: absolute;
+                top: 5vw;
+                left: 5vw;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .wrap {
+                width: 100%;
+                height: 100%;
+
+                .phone_box {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index: 3;
+                    @include flexBox(row, flex-end, flex-end);
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+
+                    .phone_bg {
+                        width: 54%;
+                        height: 100%;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 1.2vw;
+                        right: 1.5vw;
+
+                        svg {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    // .white {
+                    //     width: 50%;
+                    //     right: 2.5vw;
+                    // }
+
+                    .phone_mail {
+                        position: absolute;
+                        z-index: 3;
+                        bottom: 0;
+                        right: 5.8vw;
+                        width: 45vw;
+                        height: 45.8vw;
+                        @include flexBox(column, center, center);
+
+                        .mail {
+                            width: 100%;
+                            height: auto;
+                            cursor: pointer;
+
+                            svg {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+
+                .intro {
+                    width: 100%;
+                    height: 100%;
+                    @include flexBox(row, center, flex-start);
+                    // background-color: aqua;
+
+                    .intro_box {
+                        padding: 4.6vw 3.6vw;
+                        margin-left: 5.6vw;
+                        border-radius: 1vw;
+                        display: inline-block;
+                        background-color: color(white);
+                        box-shadow: 0px 0px 2.4vw 0.2vw rgba(0, 0, 0, 0.20);
+
+
+                        .content_1 {
+                            margin-top: 1.25vw;
+                            margin-bottom: 4vw;
+                        }
+                    }
+                }
+
+                .chooseMail_box {
+                    width: 45vw;
+                    height: 100%;
+                    @include flexBox(column, flex-start, center);
+                    padding-left: 5vw;
+                    padding-top: 3vw;
+                }
+
+                .select {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 4;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+
+                    .select_box {
+                        height: 100%;
+                        overflow: hidden;
+                        @include flexBox(row, center, center);
+
+                        .select_content {
+                            width: 43vw;
+                            height: 100%;
+                            @include flexBox(column, flex-start, center);
+                            padding-left: 5vw;
+                            padding-top: 3vw;
+
+                            .answer_box {
+                                display: grid;
+                                grid-template-columns: auto auto;
+                                gap: 1.5vw;
+
+                                .btn {
+                                    padding: 0.8vw 2vw;
+
+                                    .btn_box {
+                                        .btn_text {
+                                            font-size: 1.8vw;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .back_box {
+                                .btn {
+                                    padding: 0 2.5vw 0 3.5vw;
+
+                                    .btn_box {
+                                        .btn_text {
+                                            font-size: 1.8vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .qa_img {
+                            width: 57vw;
+                            height: 100%;
+                            overflow: hidden;
+                            position: relative;
+
+                            .mail_content {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                padding-top: 3vw;
+                                z-index: 2;
+                                @include flexBox(row, center, center);
+
+                                .question_img {
+                                    width: 100%;
+
+                                    .img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

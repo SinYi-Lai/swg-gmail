@@ -1,0 +1,69 @@
+@mixin flexBox($direction, $alignItem, $justifyContent) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $alignItem;
+    justify-content: $justifyContent;
+}
+
+$color: (white: white,
+    black: black,
+
+    grey50: #f8f9fa,
+    grey100: #f1f3f4,
+    grey200: #e8eaed,
+    grey300: #dadce0,
+    grey400: #bdc1c6,
+    grey500: #9aa0a6,
+    grey600: #80868b,
+    grey700: #5f6368,
+    grey800: #3c4043,
+    grey900: #202124,
+
+    green50: #E6F4EA,
+    green100: #CEEAD6,
+    green200: #a8dab5,
+    green300: #81c995,
+    green400: #5bb974,
+    green500: #34a853,
+    green600: #1E8E3E,
+    green700: #188038,
+    green800: #137333,
+    green900: #0D652D,
+
+    yellow50: #fef7e0,
+    yellow100: #feefc3,
+    yellow200: #fde293,
+    yellow300: #fdd663,
+    yellow400: #fcc934,
+    yellow500: #fbbc04,
+    yellow600: #f9a800,
+    yellow700: #f29900,
+    yellow800: #EA8600,
+    yellow900: #e37400,
+
+    blue50: #e8f0fe,
+    blue100: #d2e3fc,
+    blue200: #aecbfa,
+    blue300: #8AB4F8,
+    blue400: #669df6,
+    blue500: #4285f4,
+    blue600: #1a73e8,
+    blue700: #1967d2,
+    blue800: #185ABC,
+    blue900: #174ea6,
+
+    red50: #fce8e6,
+    red100: #FAD2CF,
+    red200: #f6aea9,
+    red300: #F28B82,
+    red400: #ee675c,
+    red500: #ea4335,
+    red600: #d93025,
+    red700: #c5221f,
+    red800: #B31412,
+    red900: #a50e0e,
+);
+
+@function color($color-name) {
+    @return map-get($color, $color-name);
+}
