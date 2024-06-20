@@ -3,7 +3,7 @@
 
 >此網站為 Safer With Google 展覽中的互動遊戲 ——「Gmail 信件詐騙挑戰」。參與者將在這個遊戲中體驗如何辨識電子郵件中的詐騙信息。遊戲模擬了各種常見的詐騙信件，參與者需要根據信件內容和線索，判斷哪些信件是真實的，哪些是詐騙。以提高大家的警覺性，並推廣實用的技巧來保護自己的資料安全。
 
-[![image](https://s3.amazonaws.com/prod-newsleopard-upload-img/4028814380bbe5b20181095a3bce1bc8/2024-06-20-10-42-27-%E8%9E%A2%E5%B9%95%E9%8C%84%E5%BD%B1+2024-05-17+%E4%B8%8B%E5%8D%886.03.04.gif)](https://sinyi-lai.github.io/swg-gmail/)
+[![image](https://s3.amazonaws.com/prod-newsleopard-upload-img/4028814380bbe5b20181095a3bce1bc8/2024-06-20-11-10-28-%E6%88%AA%E5%9C%96+2024-05-17+%E4%B8%8B%E5%8D%885.49.08.png)](https://sinyi-lai.github.io/swg-gmail/)
 
 
   
